@@ -1,5 +1,9 @@
 import React from "react";
+import styles from "./header.module.css";
 
-const Header = (props) => <h1>Login Form</h1>;
+const Header = ({ onLogout }) => {
+  onLogout && <button>Logout</button>;
+};
+<header>Card Maker!</header>;
 
 export default Header;
