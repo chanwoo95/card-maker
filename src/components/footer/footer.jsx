@@ -1,5 +1,8 @@
 import React from "react";
+import styles from "./footer.module.css";
 
-const Footer = (props) => <h2>If you wnat to enter, Login</h2>;
+const Footer = (props) => (
+  <p className={styles.footer}>copyright.chanwoo 2021 All rights reserved.</p>
+);
 
 export default Footer;
