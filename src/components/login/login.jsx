@@ -1,15 +1,19 @@
 import React from "react";
+import { useHistory } from "react-router";
 import Footer from "../footer/footer";
 import Header from "../header/header";
 import styles from "./login.module.css";
 
 const Login = ({ authService }) => {
-  // const history = useHistory();
-  // const goMaker = () => {
-  //   history.push("/");
-  // };
+  const history = useHistory();
+  const goMaker = () => {
+    history.push("/app");
+  };
+
   const onLogin = (event) => {
-    authService.login(event.currentTarget.textContent);
+    authService
+      .login(event.currentTarget.textContent)
+      .then((auth) => goMaker(auth));
   };
   return (
     <section className={styles.container}>
