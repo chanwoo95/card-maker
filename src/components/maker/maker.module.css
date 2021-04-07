@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4em;
+  background-color: #f5e7e6;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
